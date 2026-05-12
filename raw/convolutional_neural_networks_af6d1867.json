@@ -1,0 +1,8 @@
+{
+  "title": "Convolutional Neural Networks",
+  "content": "Convolutional Neural Networks (CNNs) are a class of deep learning models designed for grid-structured data such as images. They use local connectivity and weight sharing via convolutional filters to learn spatial hierarchies of features.\n\nCore components:\n- Convolutional Layer: Applies learned filters across spatial dimensions. Produces feature maps capturing local patterns.\n- Activation Function: ReLU (Rectified Linear Unit) applied after convolution: f(x) = max(0, x).\n- Pooling Layer: Reduces spatial dimensions (max pool, average pool). Provides translational invariance.\n- Fully Connected Layer: Final layers aggregate features for classification or regression.\n\nKey architectural innovations:\n- AlexNet (2012): First deep CNN to win ImageNet. Used ReLU, dropout.\n- VGG (2014): Very deep networks with 3x3 filters only.\n- ResNet (2015): Skip connections (residual connections) allow training of 100+ layer networks.\n- EfficientNet (2019): Compound scaling of depth, width, resolution.\n\nApplications: image classification, object detection (YOLO, Faster R-CNN), semantic segmentation, face recognition, medical imaging.\n\nLimitations vs Transformers: CNNs have limited global receptive field unless very deep. Vision Transformers (ViT) have challenged CNN dominance by applying self-attention directly to image patches.",
+  "source_url": "",
+  "source_type": "text",
+  "ingested_at": "2026-05-11T18:53:53.669519",
+  "uid": "af6d1867"
+}

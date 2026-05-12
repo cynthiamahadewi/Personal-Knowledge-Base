@@ -1,0 +1,8 @@
+{
+  "title": "Gradient Descent and Optimization",
+  "content": "Gradient descent is the core optimization algorithm for training neural networks. Given a loss function L(θ), it iteratively updates parameters θ in the direction of the negative gradient.\n\nUpdate rule: θ ← θ - η · ∇_θ L\n\nVariants:\n- Batch Gradient Descent: Uses the full dataset per update. Accurate but slow.\n- Stochastic Gradient Descent (SGD): One sample per update. Noisy but fast.\n- Mini-Batch SGD: Uses a batch of 32-512 samples. Standard in practice.\n\nAdaptive optimizers:\n- AdaGrad: Adapts learning rate per parameter using accumulated squared gradients.\n- RMSProp: Uses exponential moving average of squared gradients.\n- Adam (Adaptive Moment Estimation): Combines momentum and RMSProp. Most widely used optimizer. Maintains first and second moment estimates.\n\nLearning rate scheduling: Constant LR rarely optimal. Common schedules: cosine annealing, linear warmup + decay, OneCycleLR.\n\nChallenges: saddle points, vanishing/exploding gradients, local minima, ill-conditioning. Techniques like gradient clipping, batch normalization, and careful initialization help.\n\nIn deep learning, second-order methods (Newton's method, L-BFGS) are rarely used due to prohibitive memory and compute cost at scale.",
+  "source_url": "",
+  "source_type": "text",
+  "ingested_at": "2026-05-11T18:53:53.669422",
+  "uid": "a56bdd19"
+}

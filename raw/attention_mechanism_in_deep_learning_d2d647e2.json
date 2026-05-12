@@ -1,0 +1,8 @@
+{
+  "title": "Attention Mechanism in Deep Learning",
+  "content": "Attention mechanisms allow neural networks to dynamically focus on relevant parts of the input when producing each output element. Originally introduced for neural machine translation (Bahdanau et al., 2015), attention has become a foundational building block.\n\nTypes of attention:\n- Additive (Bahdanau) Attention: Uses a small feed-forward network to compute alignment scores.\n- Scaled Dot-Product Attention: Computes Q·K^T / sqrt(d_k), then softmax to get weights applied to V. Used in Transformers.\n- Self-Attention (Intra-Attention): Relates positions within a single sequence to each other.\n- Cross-Attention: Query comes from one sequence, keys/values from another (e.g. encoder-decoder).\n\nMathematical formulation:\n  Attention(Q, K, V) = softmax(QK^T / sqrt(d_k)) · V\n\nThe scaling factor sqrt(d_k) prevents extremely small gradients when d_k is large.\n\nMulti-Head Attention runs h parallel attention functions and concatenates results:\n  MultiHead(Q, K, V) = Concat(head_1,...,head_h) · W_O\n\nAttention has computational complexity O(n^2 * d) where n is sequence length, motivating efficient variants like Sparse Attention, Linformer, and Flash Attention.",
+  "source_url": "",
+  "source_type": "text",
+  "ingested_at": "2026-05-11T18:53:53.669203",
+  "uid": "d2d647e2"
+}

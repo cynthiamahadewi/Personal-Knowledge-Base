@@ -1,0 +1,8 @@
+{
+  "title": "Reinforcement Learning Fundamentals",
+  "content": "Reinforcement Learning (RL) is a framework where an agent learns to take actions in an environment to maximize cumulative reward. Unlike supervised learning, there is no labeled dataset — the agent discovers good behavior through trial and error.\n\nKey concepts:\n- Agent: The learner/decision-maker.\n- Environment: What the agent interacts with.\n- State (s): Current situation.\n- Action (a): What the agent can do.\n- Reward (r): Scalar feedback signal.\n- Policy (π): Mapping from states to actions. The goal is to find the optimal policy.\n- Value Function V(s): Expected cumulative reward from state s.\n- Q-Function Q(s,a): Expected cumulative reward from taking action a in state s.\n\nAlgorithms:\n- Q-Learning: Model-free, off-policy. Bellman equation: Q(s,a) ← r + γ max_a' Q(s',a')\n- Deep Q-Network (DQN): Uses a neural network to approximate Q-function. DeepMind's Atari breakthrough.\n- Policy Gradient: Directly optimize the policy. REINFORCE algorithm.\n- Actor-Critic: Combines policy gradient with value function estimation.\n- Proximal Policy Optimization (PPO): Stable, widely-used policy gradient method.\n\nApplications: game playing (AlphaGo, Atari), robotic control, autonomous driving, RLHF for LLM alignment.\n\nChallenges: sample efficiency, sparse rewards, credit assignment, exploration vs exploitation.",
+  "source_url": "",
+  "source_type": "text",
+  "ingested_at": "2026-05-11T18:53:53.669606",
+  "uid": "eefe0a23"
+}

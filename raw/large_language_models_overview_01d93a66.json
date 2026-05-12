@@ -1,0 +1,8 @@
+{
+  "title": "Large Language Models Overview",
+  "content": "Large Language Models (LLMs) are neural networks trained on massive text corpora to model the probability distribution over text. They are typically based on the Transformer decoder architecture and trained via next-token prediction (causal language modeling).\n\nScale and training:\n- GPT-3 (2020): 175B parameters, trained on ~300B tokens.\n- PaLM (2022): 540B parameters.\n- LLaMA 2 (2023): Open weights, 7B-70B parameters.\n- GPT-4 (2023): Estimated ~1T parameters, multimodal.\n\nEmergent capabilities: As LLMs scale, they exhibit emergent abilities not seen in smaller models, such as few-shot learning, chain-of-thought reasoning, and code generation.\n\nTraining pipeline:\n1. Pretraining on large text corpus (self-supervised)\n2. Supervised Fine-Tuning (SFT) on instruction-following data\n3. RLHF (Reinforcement Learning from Human Feedback) to align behavior\n\nInference: LLMs are autoregressive — they generate tokens one at a time, with each new token conditioned on all prior tokens. Techniques like beam search, temperature sampling, and top-p (nucleus) sampling control generation quality and diversity.\n\nKey challenges: hallucination, context window limits, computational cost, bias, and safety alignment.",
+  "source_url": "",
+  "source_type": "text",
+  "ingested_at": "2026-05-11T18:53:53.669316",
+  "uid": "01d93a66"
+}
